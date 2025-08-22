@@ -17,7 +17,7 @@ router.post('/login',[
 ],
     userController.loginuser
 )
-console.log('User routes loaded');
+
 
 
 
