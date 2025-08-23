@@ -12,11 +12,13 @@ app.use(express.urlencoded({ extended: true }));
 const connectToDb = require("./db/db");
 connectToDb();
 const userRoutes = require("./routes/users.routes");
+const captainRoutes = require("./routes/captain.routes");
 
 app.get("/", (req, res) => {
   res.send("Helo world");
 });
 
 app.use("/users", userRoutes);
+app.use("/captains", captainRoutes);
 
 module.exports = app;
