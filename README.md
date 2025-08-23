@@ -3,10 +3,10 @@
 This repository contains the codebase for the Uber Clone project.
 
 ## 📂 Project Structure
-- [Backend](./backend/README.md) – API, authentication, database, and server logic.
+- [Backend](./Backend/README.md) – API, authentication, database, and server logic.
 - Frontend – (coming soon)
 
 ---
 
 ## 🚀 Backend Overview
-See the full [Backend README](./backend/README.md) for details..
+See the full [Backend README](./Backend/README.md) for details.
