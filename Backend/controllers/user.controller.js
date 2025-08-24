@@ -19,7 +19,8 @@ module.exports.registerUser = async (req,res,next)=>{
       password: hashedPassword,
     });
     const token = user.generateAuthToken();
-    res.send(201).json({token,user});
+    res.status(201).json({ token, user });
+
 }
 
 module.exports.loginuser = async (req,res,next)=>{
