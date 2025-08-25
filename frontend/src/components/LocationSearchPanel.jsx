@@ -12,13 +12,11 @@ const LocationSearchPanel = () => {
     <div>
       {locations.map(function (elem) {
         return (
-          <div className="flex gap-4 border-2 border-gray-100 hover:border-black my-2 items-center justify-start w-full">
+          <div className="flex gap-4 border-2 border-gray-100 hover:border-black active:border-black my-2 items-center justify-start w-full">
             <h2 className="bg-[#eee] h-8 w-12 flex items-center justify-center rounded-full">
               <i className="ri-map-pin-fill"></i>
             </h2>
-            <h4 className="font-medium m-2">
-              {elem}
-            </h4>
+            <h4 className="font-medium m-2">{elem}</h4>
           </div>
         );
       })}
