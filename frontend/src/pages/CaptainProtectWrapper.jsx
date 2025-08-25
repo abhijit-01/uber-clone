@@ -1,20 +1,24 @@
 import React, { useContext, useEffect, useState } from "react";
-import { UserDataContext } from "../context/UserContext";
+import { CaptainDataContext } from "../context/CaptainContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const UserProtectWrapper = ({ children }) => {
+const CaptainProtectWrapper = ({children}) => {
   const token = localStorage.getItem("token");
   const navigate = useNavigate();
 
-
   useEffect(() => {
-    if (!token) {
-      navigate("/login");
+    if(!token){
+      navigate("/captain-login");
     }
   }, [token]);
 
-  return <>{children}</>;
+  return (
+    <>
+      {children}
+    </>
+  )
+  
 };
 
-export default UserProtectWrapper;
+export default CaptainProtectWrapper;
