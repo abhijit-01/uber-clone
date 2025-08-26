@@ -3,10 +3,10 @@ import React from "react";
 const LocationSearchPanel = () => {
   const locations = [
     "24B, Near Kapoor's Cafe,Sheriyans Coding School , Bhopal",
-    "23B, Near Kapoor's Cafe,Sheriyans Coding School , Bhopal",
-    "22C, Near chacha's Cafe,Sheriyans Coding School , Bhopal",
-    "18B, Near restro's Cafe,Sheriyans Coding School , Bhopal",
-    "18B, Near restro's Cafe,Sheriyans Coding School , Bhopal",
+    "23B, Near Singhania's Cafe,Sheriyans Coding School , Bhopal",
+    "22C, Near Raichad's Cafe,Sheriyans Coding School , Bhopal",
+    "18B, Near Hangout's Cafe,Sheriyans Coding School , Bhopal",
+    "18B, Near Restro's Cafe,Sheriyans Coding School , Bhopal",
   ];
   return (
     <div>
